@@ -1,0 +1,381 @@
+<!doctype html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Primer Congreso Multidisciplinar de Estudiantes – UNSAdA</title>
+  <meta name="description" content="31 de octubre y 1 de noviembre · Predio Universitario Los Patricios, San Antonio de Areco. Inscripción, bases, novedades y toda la información del Congreso Multidisciplinar de Estudiantes de la UNSAdA." />
+  <!-- Open Graph / redes sociales -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Primer Congreso Multidisciplinar de Estudiantes – UNSAdA" />
+  <meta property="og:description" content="31 de octubre y 1 de noviembre · Predio Universitario Los Patricios, San Antonio de Areco." />
+  <meta property="og:image" content="assets/instagram-cuadrada.png" />
+  <meta property="og:image:alt" content="Congreso Multidisciplinar de Estudiantes" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              bg: '#0f0f13', // fondo oscuro
+              card: '#16161c',
+              accent: '#ff2ea1', // fucsia/rosa
+              accent2: '#8b5cf6', // violeta de apoyo
+              mint: '#9ae6b4'
+            }
+          },
+          boxShadow: {
+            soft: '0 10px 30px rgba(0,0,0,.35)'
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    /* Animaciones suaves on-scroll */
+    .reveal {opacity: 0; transform: translateY(12px); transition: opacity .6s ease, transform .6s ease;}
+    .reveal.visible {opacity: 1; transform: translateY(0)}
+    /* Botón volver arriba oculto por defecto */
+    #toTop {opacity:.0; pointer-events:none; transition: opacity .3s ease}
+    #toTop.show {opacity:1; pointer-events:auto}
+  </style>
+</head>
+<body class="bg-brand-bg text-white selection:bg-brand-accent/30">
+  <!-- Header fijo -->
+  <header class="fixed inset-x-0 top-0 z-50 bg-brand-bg/80 backdrop-blur border-b border-white/10">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16">
+        <a href="#inicio" class="flex items-center gap-3">
+          <span class="inline-flex h-8 w-8 items-center justify-center rounded bg-brand-accent text-brand-bg font-black">C</span>
+          <span class="font-semibold tracking-wide">Congreso Multidisciplinar · UNSAdA</span>
+        </a>
+        <nav class="hidden md:flex items-center gap-6 text-sm">
+          <a href="#inicio" class="hover:text-brand-accent">Inicio</a>
+          <a href="#novedades" class="hover:text-brand-accent">Novedades</a>
+          <a href="#sede" class="hover:text-brand-accent">Sede</a>
+          <a href="#faq" class="hover:text-brand-accent">Preguntas frecuentes</a>
+          <a href="#inscripcion" class="hover:text-brand-accent">Inscripción</a>
+          <a href="#inscripcion" class="ml-2 rounded-xl bg-brand-accent px-4 py-2 font-semibold text-brand-bg shadow-soft">Inscribite</a>
+          <a href="#bases" class="rounded-xl border border-brand-accent px-4 py-2 font-semibold hover:bg-brand-accent/10">Bases</a>
+        </nav>
+        <button id="menuBtn" aria-label="Abrir menú" class="md:hidden inline-flex items-center justify-center rounded bg-white/10 p-2">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" class="h-6 w-6"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+      </div>
+    </div>
+    <!-- Menú móvil -->
+    <div id="mobileNav" class="md:hidden hidden border-t border-white/10 bg-brand-bg">
+      <div class="mx-auto max-w-7xl px-4 py-4 space-y-3">
+        <a href="#inicio" class="block">Inicio</a>
+        <a href="#novedades" class="block">Novedades</a>
+        <a href="#sede" class="block">Sede</a>
+        <a href="#faq" class="block">Preguntas frecuentes</a>
+        <a href="#inscripcion" class="block">Inscripción</a>
+        <div class="pt-2 flex gap-3">
+          <a href="#inscripcion" class="flex-1 text-center rounded-lg bg-brand-accent px-4 py-2 font-semibold text-brand-bg">Inscribite</a>
+          <a href="#bases" class="flex-1 text-center rounded-lg border border-brand-accent px-4 py-2 font-semibold">Bases</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main id="inicio" class="pt-24">
+    <!-- Hero -->
+    <section class="relative py-16 sm:py-24">
+      <div class="absolute inset-0 -z-10 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-brand-accent/20 via-transparent to-transparent"></div>
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 grid gap-10 lg:grid-cols-2 items-center">
+        <div class="reveal">
+          <h1 class="text-3xl sm:text-5xl font-extrabold leading-tight"><span class="text-white">Primer Congreso</span> <span class="text-brand-accent">Multidisciplinar de Estudiantes</span> · UNSAdA</h1>
+          <p class="mt-4 text-white/80 max-w-prose">31 de octubre y 1 de noviembre de 2025 · Predio Universitario <strong>Los Patricios</strong>, San Antonio de Areco. Encuentro académico para visibilizar producciones estudiantiles y fortalecer el vínculo universidad–territorio.</p>
+          <div class="mt-6 flex flex-wrap gap-3">
+            <a href="#inscripcion" class="rounded-xl bg-brand-accent px-5 py-3 font-semibold text-brand-bg shadow-soft">Inscribirme</a>
+            <a href="#bases" class="rounded-xl border border-brand-accent px-5 py-3 font-semibold">Leer bases</a>
+          </div>
+          <!-- Contador -->
+          <div class="mt-8 grid grid-cols-4 gap-3 w-full sm:max-w-md text-center">
+            <div class="rounded-xl bg-brand-card p-4"><div id="cd-d" class="text-3xl font-black">--</div><div class="text-xs uppercase tracking-wide text-white/60">Días</div></div>
+            <div class="rounded-xl bg-brand-card p-4"><div id="cd-h" class="text-3xl font-black">--</div><div class="text-xs uppercase tracking-wide text-white/60">Horas</div></div>
+            <div class="rounded-xl bg-brand-card p-4"><div id="cd-m" class="text-3xl font-black">--</div><div class="text-xs uppercase tracking-wide text-white/60">Min</div></div>
+            <div class="rounded-xl bg-brand-card p-4"><div id="cd-s" class="text-3xl font-black">--</div><div class="text-xs uppercase tracking-wide text-white/60">Seg</div></div>
+          </div>
+        </div>
+        <div class="reveal">
+          <img src="assets/instagram-cuadrada.png" alt="Imagen oficial Congreso" class="w-full rounded-2xl shadow-soft border border-white/10"/>
+        </div>
+      </div>
+    </section>
+
+    <!-- Logos institucionales -->
+    <section class="py-12 border-t border-white/10 reveal">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <h2 class="text-2xl font-bold mb-6">Acompañan</h2>
+        <div class="grid grid-cols-2 sm:grid-cols-4 gap-6 items-center">
+          <!-- Reemplazar src por logos reales en /assets/logos/ -->
+          <img src="assets/logos/unsada.png" alt="UNSAdA" class="h-14 object-contain justify-self-center"/>
+          <img src="assets/logos/fusada.png" alt="FUSAdA" class="h-14 object-contain justify-self-center"/>
+          <img src="assets/logos/fua.png" alt="FUA" class="h-14 object-contain justify-self-center"/>
+          <img src="assets/logos/otros.png" alt="Institución acompañante" class="h-14 object-contain justify-self-center"/>
+        </div>
+      </div>
+    </section>
+
+    <!-- Novedades -->
+    <section id="novedades" class="py-16 reveal">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between mb-6">
+          <h2 class="text-2xl font-bold">Novedades</h2>
+        </div>
+        <div class="grid gap-6 lg:grid-cols-3">
+          <!-- Gacetilla -->
+          <article class="lg:col-span-2 rounded-2xl bg-brand-card p-6 border border-white/10">
+            <img src="assets/lanzamiento.jpg" alt="Acto de lanzamiento" class="mb-4 rounded-xl border border-white/10"/>
+            <h3 class="text-xl font-semibold">Con fuerte acompañamiento institucional, se presentó el Congreso</h3>
+            <p class="mt-2 text-white/80">Se realizó el lanzamiento oficial del Primer Congreso Multidisciplinar de Estudiantes, impulsado por la FUSAdA en el marco de los 10 años de la UNSAdA, con el acompañamiento de la FUA y autoridades universitarias.</p>
+            <details class="mt-3 text-white/70">
+              <summary class="cursor-pointer underline underline-offset-4">Leer gacetilla completa</summary>
+              <div class="mt-3 space-y-3 text-sm leading-relaxed">
+                <p>El Congreso, que se llevará a cabo en octubre en el predio “Los Patricios”, propone un espacio de intercambio, visibilización y reflexión en torno al rol de los y las estudiantes en procesos de transformación social.</p>
+                <p>Participaron autoridades de la UNSAdA y referentes estudiantiles. Se destacaron los ejes de ciencia e innovación, territorio y comunidad, ambiente y salud integral.</p>
+              </div>
+            </details>
+          </article>
+          <!-- Segunda novedad -->
+          <article class="rounded-2xl bg-brand-card p-6 border border-white/10">
+            <h3 class="text-xl font-semibold">Apertura del 2º período de presentaciones</h3>
+            <p class="mt-2 text-white/80">Se extiende la recepción de producciones estudiantiles hasta el <strong>17 de octubre</strong>. Podés postular tu proyecto como póster y, según evaluación, también como ponencia oral.</p>
+            <a href="#inscripcion" class="mt-4 inline-block rounded-lg border border-brand-accent px-4 py-2">Cargar mi propuesta</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bases y condiciones -->
+    <section id="bases" class="py-16 border-t border-white/10 reveal">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="flex items-end justify-between gap-4 mb-6">
+          <h2 class="text-2xl font-bold">Bases y condiciones</h2>
+          <div class="flex gap-3 text-sm">
+            <a href="assets/Bases y condiciones.pdf" download class="rounded-lg bg-brand-accent px-4 py-2 font-semibold text-brand-bg">Descargar PDF</a>
+            <a href="assets/Modelo Resumen - CME UNSAdA.docx" download class="rounded-lg border border-brand-accent px-4 py-2 font-semibold">Modelo de resumen (DOCX)</a>
+          </div>
+        </div>
+        <div class="grid gap-6 md:grid-cols-3">
+          <div class="rounded-2xl bg-brand-card p-6 border border-white/10">
+            <h3 class="font-semibold mb-2">Requisitos</h3>
+            <ul class="list-disc pl-5 text-white/80 space-y-1">
+              <li>Ser estudiante o egresado/a reciente.</li>
+              <li>Enviar <strong>resumen</strong> (hasta 400 palabras) y <strong>palabras clave</strong>.</li>
+              <li>Autoría: hasta 6 autores/as.</li>
+            </ul>
+          </div>
+          <div class="rounded-2xl bg-brand-card p-6 border border-white/10">
+            <h3 class="font-semibold mb-2">Modalidades</h3>
+            <ul class="list-disc pl-5 text-white/80 space-y-1">
+              <li>Presentación en <strong>póster</strong> (todos los trabajos aceptados).</li>
+              <li>Selección de <strong>ponencias orales</strong> por Comité Evaluador.</li>
+            </ul>
+          </div>
+          <div class="rounded-2xl bg-brand-card p-6 border border-white/10">
+            <h3 class="font-semibold mb-2">Criterios de evaluación</h3>
+            <ul class="list-disc pl-5 text-white/80 space-y-1">
+              <li>Pertinencia con ejes temáticos.</li>
+              <li>Calidad metodológica y claridad.</li>
+              <li>Aporte académico y/o territorial.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Inscripción -->
+    <section id="inscripcion" class="py-16 reveal">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="grid gap-6 md:grid-cols-2 items-start">
+          <div>
+            <h2 class="text-2xl font-bold">Inscripción</h2>
+            <p class="mt-2 text-white/80">Elegí tu modalidad al ingresar al formulario: <strong>asistente</strong> o <strong>presentación de proyecto</strong>. Para postular trabajos, adjuntá el resumen utilizando el modelo disponible en Bases.</p>
+            <a href="https://bit.ly/congresounsada" target="_blank" class="mt-4 inline-block rounded-xl bg-brand-accent px-5 py-3 font-semibold text-brand-bg shadow-soft">Abrir formulario</a>
+          </div>
+          <iframe class="w-full h-[480px] rounded-2xl border border-white/10" src="https://docs.google.com/forms/d/e/1FAIpQLScIV-ZG4lFIRWkSO2S8HXwX8ppdIuKntb04F04kKo68sH7N6Q/viewform?embedded=true">Cargando…</iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sede -->
+    <section id="sede" class="py-16 border-t border-white/10 reveal">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <h2 class="text-2xl font-bold">Sede: Predio Universitario “Los Patricios”</h2>
+        <p class="mt-2 text-white/80">Dirección: <strong>Accesi Vagues. RP41 KM 276</strong>, San Antonio de Areco, Provincia de Buenos Aires.</p>
+        <div class="mt-6 grid gap-6 lg:grid-cols-2">
+          <iframe class="w-full h-80 rounded-2xl border border-white/10" loading="lazy" allowfullscreen referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=RP41%20KM%20276%20San%20Antonio%20de%20Areco&output=embed"></iframe>
+          <div class="space-y-4">
+            <div class="rounded-2xl bg-brand-card p-5 border border-white/10">
+              <h3 class="font-semibold mb-1">Accesibilidad y cómo llegar</h3>
+              <ul class="list-disc pl-5 text-white/80 space-y-1 text-sm">
+                <li>Ingreso vehicular y peatonal señalizado.</li>
+                <li>Estacionamiento dentro del predio.</li>
+                <li>Baños accesibles y espacios amplios.</li>
+              </ul>
+            </div>
+            <!-- Carrusel simple -->
+            <div class="relative rounded-2xl overflow-hidden border border-white/10">
+              <div id="carousel" class="whitespace-nowrap transition-transform duration-500">
+                <img src="assets/sede/1.jpg" class="inline-block w-full h-64 object-cover" alt="Predio Los Patricios 1" />
+                <img src="assets/sede/2.jpg" class="inline-block w-full h-64 object-cover" alt="Predio Los Patricios 2" />
+                <img src="assets/sede/3.jpg" class="inline-block w-full h-64 object-cover" alt="Predio Los Patricios 3" />
+              </div>
+              <button type="button" id="prev" class="absolute left-2 top-1/2 -translate-y-1/2 rounded-full bg-black/50 p-2">&#9664;</button>
+              <button type="button" id="next" class="absolute right-2 top-1/2 -translate-y-1/2 rounded-full bg-black/50 p-2">&#9654;</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Preguntas frecuentes -->
+    <section id="faq" class="py-16 reveal">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <h2 class="text-2xl font-bold">Preguntas frecuentes</h2>
+        <div class="mt-6 grid gap-4 md:grid-cols-2">
+          <details class="rounded-xl bg-brand-card p-5 border border-white/10" open>
+            <summary class="font-semibold cursor-pointer">¿Quiénes pueden participar?</summary>
+            <p class="mt-2 text-white/80">Estudiantes y egresados/as recientes de universidades públicas o privadas de todo el país.</p>
+          </details>
+          <details class="rounded-xl bg-brand-card p-5 border border-white/10">
+            <summary class="font-semibold cursor-pointer">¿Tiene costo?</summary>
+            <p class="mt-2 text-white/80">La participación es <strong>sin arancel</strong>.</p>
+          </details>
+          <details class="rounded-xl bg-brand-card p-5 border border-white/10">
+            <summary class="font-semibold cursor-pointer">¿Cómo presento mi proyecto?</summary>
+            <p class="mt-2 text-white/80">Completá el formulario de inscripción, elegí “presentación de proyecto” y adjuntá el resumen (modelo disponible en Bases).</p>
+          </details>
+          <details class="rounded-xl bg-brand-card p-5 border border-white/10">
+            <summary class="font-semibold cursor-pointer">¿Entregan certificados?</summary>
+            <p class="mt-2 text-white/80">Sí. Se emitirán certificados de asistencia y de presentación.</p>
+          </details>
+          <details class="rounded-xl bg-brand-card p-5 border border-white/10">
+            <summary class="font-semibold cursor-pointer">¿Cuál es la fecha límite para presentar trabajos?</summary>
+            <p class="mt-2 text-white/80">Hasta el <strong>17 de octubre</strong>.</p>
+          </details>
+          <details class="rounded-xl bg-brand-card p-5 border border-white/10">
+            <summary class="font-semibold cursor-pointer">¿Dónde se realiza?</summary>
+            <p class="mt-2 text-white/80">En el Predio Universitario <strong>Los Patricios</strong>, San Antonio de Areco.</p>
+          </details>
+          <details class="rounded-xl bg-brand-card p-5 border border-white/10">
+            <summary class="font-semibold cursor-pointer">¿Horario de acreditación?</summary>
+            <p class="mt-2 text-white/80">A partir de las <strong>9:30 h</strong>.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- Newsletter / Mailing -->
+    <section class="py-16 border-t border-white/10 reveal">
+      <div class="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8 text-center">
+        <h2 class="text-2xl font-bold">Recibí novedades en tu correo</h2>
+        <p class="mt-2 text-white/80">Suscribite para enterarte de actualizaciones del Congreso.</p>
+        <form id="newsletterForm" class="mt-6 flex gap-3 justify-center">
+          <input id="newsletterEmail" type="email" required placeholder="tu@email.com" class="w-64 sm:w-80 rounded-xl border border-white/10 bg-brand-card px-4 py-3 outline-none focus:ring-2 focus:ring-brand-accent" />
+          <button class="rounded-xl bg-brand-accent px-5 py-3 font-semibold text-brand-bg">Suscribirme</button>
+        </form>
+        <p id="newsletterMsg" class="mt-3 text-sm text-white/70"></p>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="border-t border-white/10 py-10 bg-black/20">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 grid gap-8 md:grid-cols-3">
+      <div>
+        <h3 class="font-semibold">Contacto</h3>
+        <p class="mt-2 text-white/80 text-sm">
+          <a href="mailto:congreso.multidisciplinar@unsada.edu.ar" class="underline">congreso.multidisciplinar@unsada.edu.ar</a><br>
+          Instagram: <a class="underline" href="https://instagram.com/cme.unsada" target="_blank">@cme.unsada</a>
+        </p>
+      </div>
+      <div>
+        <h3 class="font-semibold">Enlaces</h3>
+        <ul class="mt-2 text-white/80 text-sm space-y-1">
+          <li><a href="#bases" class="underline">Bases</a></li>
+          <li><a href="#inscripcion" class="underline">Inscripción</a></li>
+          <li><a href="#faq" class="underline">Preguntas frecuentes</a></li>
+        </ul>
+      </div>
+      <div class="text-sm text-white/60 self-end md:text-right">
+        <p>© <span id="year"></span> UNSAdA · FUSAdA. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Botón Volver arriba -->
+  <button id="toTop" aria-label="Volver arriba" class="fixed bottom-6 right-6 rounded-full bg-brand-accent p-3 text-brand-bg shadow-soft">↑</button>
+
+  <script>
+    // Menú móvil
+    const menuBtn = document.getElementById('menuBtn');
+    const mobileNav = document.getElementById('mobileNav');
+    menuBtn?.addEventListener('click', ()=>{
+      mobileNav.classList.toggle('hidden');
+    });
+
+    // Contador regresivo hasta 31/10/2025 09:00 (Buenos Aires)
+    const target = new Date('2025-10-31T09:00:00-03:00').getTime();
+    const ids = {d:'cd-d',h:'cd-h',m:'cd-m',s:'cd-s'};
+    const tick = () => {
+      const now = Date.now();
+      let diff = Math.max(0, target - now);
+      const d = Math.floor(diff / (1000*60*60*24)); diff -= d*24*60*60*1000;
+      const h = Math.floor(diff / (1000*60*60)); diff -= h*60*60*1000;
+      const m = Math.floor(diff / (1000*60)); diff -= m*60*1000;
+      const s = Math.floor(diff / 1000);
+      document.getElementById(ids.d).textContent = d;
+      document.getElementById(ids.h).textContent = h.toString().padStart(2,'0');
+      document.getElementById(ids.m).textContent = m.toString().padStart(2,'0');
+      document.getElementById(ids.s).textContent = s.toString().padStart(2,'0');
+    }
+    tick(); setInterval(tick, 1000);
+
+    // On-scroll reveal
+    const observer = new IntersectionObserver((entries)=>{
+      entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('visible'); observer.unobserve(e.target); } });
+    },{threshold:0.12});
+    document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
+
+    // Volver arriba
+    const toTop = document.getElementById('toTop');
+    window.addEventListener('scroll', ()=>{
+      if(window.scrollY > 400){ toTop.classList.add('show'); } else { toTop.classList.remove('show'); }
+    });
+    toTop.addEventListener('click', ()=>window.scrollTo({top:0, behavior:'smooth'}));
+
+    // Newsletter sin backend: abre correo prellenado
+    document.getElementById('newsletterForm').addEventListener('submit', (e)=>{
+      e.preventDefault();
+      const email = document.getElementById('newsletterEmail').value.trim();
+      if(!email) return;
+      const subj = encodeURIComponent('Suscripción a Novedades – Congreso Multidisciplinar');
+      const body = encodeURIComponent('Hola, deseo suscribirme al newsletter del Congreso. Mi correo es: '+email);
+      window.location.href = `mailto:congreso.multidisciplinar@unsada.edu.ar?subject=${subj}&body=${body}`;
+      document.getElementById('newsletterMsg').textContent = 'Gracias. Se abrió tu gestor de correo para enviar la suscripción.';
+      e.target.reset();
+    });
+
+    // Carrusel muy simple
+    let idx=0; const carr = document.getElementById('carousel');
+    const slides = carr ? carr.children.length : 0;
+    const go = (dir)=>{
+      idx = (idx + dir + slides) % slides;
+      carr.style.transform = `translateX(-${idx*100}%)`;
+    }
+    document.getElementById('prev').addEventListener('click', ()=>go(-1));
+    document.getElementById('next').addEventListener('click', ()=>go(1));
+
+    // Año dinámico
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
